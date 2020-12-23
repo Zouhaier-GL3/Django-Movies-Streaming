@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}
+Logout
+{% endblock title %}
+
+{% block content %}
+<div class="px-4" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), center / cover url( ./../static/images/5002.jpg )">
+<br>
+<br>
+<div class="sidebar-widget-header-right  border-yellow-600 border-2 rounded-t-full rounded-l-full px-1 py-1 shadow-2xl bg-gray-900 ">
+  <div class="flex w-full mb-20 flex-wrap m-2">
+    <div class="p-2 bg-yellow-700 items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex"
+      role="alert">
+      <span class="flex rounded-full bg-gray-900 uppercase px-2 py-1 text-xs font-bold mr-3">Add</span>
+      <span class="font-semibold mr-2 text-left flex-auto">Go To Log In</span>
+      <svg class="fill-current opacity-75 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+        <path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z" /></svg>
+    </div>
+
+    <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base text-yellow-700">Show-Movies allows you to enjoy online
+      playback of content with the best audio-visual quality in all the most popular and common formats.
+    </p>
+  </div>
+</div><br>
+<div class="container w-25 card p-4 mt-4">
+   <p class="font-weight-light">
+   You have been logged out.<br>
+   You can log in again <a href="{% url 'login' %}" class="text-info">using this link</a>!
+   </p>
+</div>
+
+<br>
+</div>
+{% endblock content %}
